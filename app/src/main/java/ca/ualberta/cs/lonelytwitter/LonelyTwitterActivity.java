@@ -27,6 +27,13 @@ public class LonelyTwitterActivity extends Activity {
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		ArrayList<Tweet> tweetList = new ArrayList<Tweet>();
+		// this array list can contain all the kinds of tweets now because in inherits from tweet
+
+		Tweet importantTweet = new ImportantTweet("");
+
+		importantTweet.isImportant();
+
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
