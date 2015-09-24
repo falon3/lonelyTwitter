@@ -21,6 +21,7 @@ public abstract class Tweet extends Object implements Tweetable {
     }
 
     public String getText() {
+
         return text;
     }
 
@@ -41,5 +42,10 @@ public abstract class Tweet extends Object implements Tweetable {
     }
 
     public abstract Boolean isImportant();
+
+    @Override
+    public String toString() {
+        return date.toString() + " || " + this.text;
+    }
 
 }
