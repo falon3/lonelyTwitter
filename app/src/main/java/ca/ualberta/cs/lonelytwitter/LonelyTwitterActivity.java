@@ -27,10 +27,25 @@ import com.google.gson.reflect.TypeToken;
 public class LonelyTwitterActivity extends Activity { //View
 
 	private static final String FILENAME = "file.sav"; //Model
+	private Button saveButton;
+
+	public EditText getBodyText() {
+		return bodyText;
+	}
+
 	private EditText bodyText; // View
 	private ArrayList<Tweet> tweets = new ArrayList<Tweet>(); //View
+
+	public ListView getOldTweetsList() {
+		return oldTweetsList;
+	}
+
 	private ListView oldTweetsList; //View
 	private ArrayAdapter<Tweet> adapter; //View
+
+	public Button getSaveButton() {
+		return saveButton;
+	}
 
 	/** Called when the activity is first created. */
 	@Override
@@ -40,7 +55,7 @@ public class LonelyTwitterActivity extends Activity { //View
 		setContentView(R.layout.main); // View
 
 		bodyText = (EditText) findViewById(R.id.body); //View
-		Button saveButton = (Button) findViewById(R.id.save); //View
+		saveButton = (Button) findViewById(R.id.save);
 		oldTweetsList = (ListView) findViewById(R.id.oldTweetsList); //View
 
 		saveButton.setOnClickListener(new View.OnClickListener() { //View
