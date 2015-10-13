@@ -85,6 +85,19 @@ public class LonelyTwitterActivityTest extends ActivityInstrumentationTestCase2 
         // Remove the ActivityMonitor
         getInstrumentation().removeMonitor(receiverActivityMonitor);
 
+        // test that the tweet being shown on the edit screen is the tweet we clicked on
+
+        // edit the text of that tweet
+
+        // save our edits
+
+        // assert that our edits were saved into the tweet correctly
+
+        // assert that our edits are shown on the screen to the user
+
+        // back in the main activity
+
+
         // end of test: clear the data
         // end of test: make sure the edit activity is closed
         receiverActivity.finish();
